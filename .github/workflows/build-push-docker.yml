@@ -35,7 +35,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ secrets.DOCKERHUB_USERNAME }}/chirpstack-register-callback
+          images: icubeinetlab/chirpstack-register-callback
           tags: |
             type=ref,event=branch
             type=semver,pattern={{version}}
